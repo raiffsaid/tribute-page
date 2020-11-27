@@ -44,6 +44,7 @@ section {
 
 .bio p {
     margin: 20px 0 0 50px;
+    text-align: justify;
 }
 
 .bio h2 {
@@ -53,7 +54,11 @@ section {
 .albums {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+.albums h2 {
+    margin-top: 10px;
 }
 
 .albums a {
@@ -77,4 +82,46 @@ section {
 
 .albums a:hover:after {
     transform: scaleX(1);
+}
+
+footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #2c2c2c;
+}
+
+.footer_copy {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_copy p {
+    margin-top: 10px;
+}
+
+/* Adding hover effects to link */
+
+.footer_copy a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer_copy a:hover {
+    color: rgb(9, 56, 156);
+    transition: 500ms;
+}
+
+.footer_copy a::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: rgb(9, 56, 156);
+    transition: 400ms;
+}
+  
+.footer_copy a:hover::after {
+    width: 100%;
 }
